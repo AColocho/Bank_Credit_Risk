@@ -18,15 +18,24 @@ The data consists of 32,581 rows of data that contains the following features:
 |cbpersondefaultonfile|	Historical default|
 |cbpresoncredhistlength|	Credit history length|
 
+Data from: https://www.kaggle.com/laotse/credit-risk-dataset
+
 # Data Cleaning
 The following was done to make the data useful for this project:  
 - loan_intent, person_home_ownership, loan_grade, and cb_person_default_on_file were changed to numberical categories.
 - loan_int_rate and person_emp_length were removed due to missing data.
 
 # Data Exploration
-Initial analysis tried to differentiate default customers and non-default customers. Initial findings suggested that customers that default on loans tend to be young, low loan rating, and loan to income ratio is typically higher.  
+!["All Loans"](images/all_loan.png)
+
+Initial analysis tried to differentiate default customers and non-default customers. Initial findings suggested that customers that customers that default on loans tend to have low loan rating and the loan to income ratio is typically higher.
+!["Default Loans"](images/default_loan.png)
+
+The following visualizations show customers that do not default on loans.
+!["Non-Default Loans"](images/non_default_loan.png)
   
 Feature analysis was ran using random forest classifer, and findings suggested that loan to income percentage was the feature with the highest importance followed by person's income and loan grade.
+!["Feature Importance"](images/importance.png)
 
 # Modelling and Predictions
 The dataset was modelled succesfully with the random forest algorithm. The following metrics were achieved.
