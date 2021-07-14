@@ -33,8 +33,8 @@ The dataset was modelled succesfully with the random forest algorithm. The follo
 
 ||precision |recall |f1-score |support|
 |----------|----------|-------|---------|-------|
-|0 |0.92 |0.98 |0.95 |5072
-|1 |0.92 |0.71 |0.80 |1445
+|non-default |0.92 |0.98 |0.95 |5072
+|default |0.92 |0.71 |0.80 |1445
 |accuracy| ||0.92| 6517|
 |macro avg| 0.92| 0.85| 0.88| 6517|
 |weighted avg| 0.92| 0.92| 0.92| 6517|
